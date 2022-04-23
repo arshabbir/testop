@@ -1,0 +1,19 @@
+domain: dev.db.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: testop
+repo: github.com/arshabbir/testop
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: dev.db.com
+  group: database
+  kind: Db
+  path: github.com/arshabbir/testop/api/v1alpha1
+  version: v1alpha1
+version: "3"

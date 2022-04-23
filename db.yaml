@@ -1,0 +1,8 @@
+apiVersion: database.dev.db.com/v1alpha1
+kind: Db
+metadata:
+  name: mysql
+spec:
+  name: mysql
+  image : mysql:latest
+  replica: 3
